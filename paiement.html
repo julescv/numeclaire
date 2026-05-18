@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <!-- ✅ Interface principale -->
+    <div class="box">
+        <h2>Paiement</h2>
+
+        <div class="price-line">
+            <span>Montant :</span>
+            <span id="montant">0 €</span>
+        </div>
+
+        <div class="price-line">
+            <span>Taxe (20%) :</span>
+            <span id="taxe">0 €</span>
+        </div>
+
+        <div class="price-line" style="font-weight: bold;">
+            <span>Total TTC :</span>
+            <span id="total">0 €</span>
+        </div>
+
+        <button id="btn-back" onclick="window.location.href='index.php'">⬅ Retour</button>
+        <button id="btn-pay">Payer ✅</button>
+    </div>
+
+    <!-- ✅ Modale confirmation -->
+    <div class="modal" id="modal-success">
+        <div class="modal-content">
+            <h3>Paiement effectué ✅</h3>
+            <p>Merci pour votre achat !</p>
+
+            <button id="close-modal" onclick="window.location.href='index.php'">
+                Retour à l'accueil
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // ✅ Récupération du total envoyé par l’URL : paiement.html?total=xxxx
+        
+        const params = new URLSearchParams(window.location.search);
+        const montant = Number(params.get("total")) || 0;
+
+
+        const taxe = montant * 0.20;
+        const ttc = montant + taxe;
+
+        // ✅ Affichage
+        document.getElementById("montant").textContent = montant.toFixed(2) + " €";
+        document.getElementById("taxe").textContent = taxe.toFixed(2) + " €";
+        document.getElementById("total").textContent = ttc.toFixed(2) + " €";
+
+        // ✅ Bouton payer → ouverture modale
+        document.getElementById("btn-pay").addEventListener("click", () => {
+            document.getElementById("modal-success").style.display = "flex";
+        });
+    </script>
+
+</body>
+</html>

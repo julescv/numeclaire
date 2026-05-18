@@ -1,0 +1,90 @@
+
+
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #1a1f3c; /* ✅ Fond uni coloré */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+            width: 320px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .price-line {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        button {
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.25s;
+        }
+
+        #btn-back {
+            background: #bbb;
+        }
+
+        #btn-back:hover {
+            background: #e0e0e0;
+        }
+
+        #btn-pay {
+            background: #3cf0b7;
+            color: #071018;
+        }
+
+        #btn-pay:hover {
+            background: #20d59c;
+        }
+
+        /* ✅ MODALE */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 14px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .modal-content h3 {
+            margin-top: 0;
+            color: green;
+        }
+
+        #close-modal {
+            background: #3cf0b7;
+            margin-top: 20px;
+        }
+    

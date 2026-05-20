@@ -102,7 +102,7 @@ include __DIR__."/repository/produitRepository.php";
         </p>
         <div class="features">
           <article class="feature">
-            <h3>Conseil &amp; orientation</h3>
+            <h3>Conseil & orientation</h3>
             <p>Nous aidons à choisir l’équipement adapté aux besoins (bureautique, gaming, pro).</p>
           </article>
           <article class="feature">
@@ -110,7 +110,7 @@ include __DIR__."/repository/produitRepository.php";
             <p>Pré‑configuration et tests pour que tout fonctionne dès la première utilisation.</p>
           </article>
           <article class="feature">
-            <h3>Suivi &amp; SAV</h3>
+            <h3>Suivi & SAV</h3>
             <p>Accompagnement après achat et solutions rapides en cas de problème.</p>
           </article>
         </div>
@@ -288,7 +288,7 @@ include __DIR__."/repository/produitRepository.php";
             <h2 class="name">JAQUET Pierrot</h2>
             <p class="role">Manager des ventes</p>
             <ul class="bullets">
-              <li>Gestion des ventes &amp; promotions</li>
+              <li>Gestion des ventes & promotions</li>
               <li>Déploiement des plans d’action</li>
             </ul>
             <p>fiche de poste</p><a href="Fiche de Poste/Fiche_JAQUET_Pierrot_TABLE.pdf" class="download"><strong>téléchargement⬇️</strong></a>

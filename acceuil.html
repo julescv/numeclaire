@@ -444,23 +444,29 @@
                         <!-- Flèche en fin de ligne -->
                         <polygon points="1100,110 1070,100 1070,120" fill="currentColor" />
                         <!-- Étape 1 : 2019 -->
-                        <circle cx="250" cy="110" r="30" fill="currentColor" />
-                        <text x="250" y="115" text-anchor="middle" fill="white" font-weight="bold"
-                            font-size="20">1</text>
-                        <text x="250" y="160" text-anchor="middle" font-size="18" font-weight="bold">2019</text>
-                        <text x="250" y="190" text-anchor="middle" font-size="14">Démarrage</text>
+                        <g class="step-link" data-modal="modal-demarrage" cursor="pointer">
+                            <circle cx="250" cy="110" r="30" fill="currentColor" />
+                            <text x="250" y="115" text-anchor="middle" fill="white" font-weight="bold"
+                                font-size="20">1</text>
+                            <text x="250" y="160" text-anchor="middle" font-size="18" font-weight="bold">2019</text>
+                            <text x="250" y="190" text-anchor="middle" font-size="14">Démarrage</text>
+                        </g>
                         <!-- Étape 2 : 2022 -->
-                        <circle cx="600" cy="110" r="30" fill="currentColor" />
-                        <text x="600" y="115" text-anchor="middle" fill="white" font-weight="bold"
-                            font-size="20">2</text>
-                        <text x="600" y="160" text-anchor="middle" font-size="18" font-weight="bold">2022</text>
-                        <text x="600" y="190" text-anchor="middle" font-size="14">Croissance</text>
+                        <g class="step-link" data-modal="modal-croissance" cursor="pointer">
+                            <circle cx="600" cy="110" r="30" fill="currentColor" />
+                            <text x="600" y="115" text-anchor="middle" fill="white" font-weight="bold"
+                                font-size="20">2</text>
+                            <text x="600" y="160" text-anchor="middle" font-size="18" font-weight="bold">2022</text>
+                            <text x="600" y="190" text-anchor="middle" font-size="14">Croissance</text>
+                        </g>
                         <!-- Étape 3 : 2026 -->
-                        <circle cx="950" cy="110" r="30" fill="currentColor" />
-                        <text x="950" y="115" text-anchor="middle" fill="white" font-weight="bold"
-                            font-size="20">3</text>
-                        <text x="950" y="160" text-anchor="middle" font-size="18" font-weight="bold">2026</text>
-                        <text x="950" y="190" text-anchor="middle" font-size="14">Aujourd'hui</text>
+                        <g class="step-link" data-modal="modal-aujourdhui" cursor="pointer">
+                            <circle cx="950" cy="110" r="30" fill="currentColor" />
+                            <text x="950" y="115" text-anchor="middle" fill="white" font-weight="bold"
+                                font-size="20">3</text>
+                            <text x="950" y="160" text-anchor="middle" font-size="18" font-weight="bold">2026</text>
+                            <text x="950" y="190" text-anchor="middle" font-size="14">Aujourd'hui</text>
+                        </g>
                     </svg>
 
                     <figcaption class="arrow-caption small">
@@ -853,7 +859,7 @@
 
     <!-- ===== MODALE HISTOIRE : Démarrage ===== -->
 
-    <div class="histoire" id="modal-demarrage">
+    <div class="histoire modal" id="modal-demarrage">
         <div class="modal-content modal-history">
             <span class="close" data-close="modal-demarrage">×</span>
 
@@ -892,7 +898,7 @@
 
     <!-- ===== MODALE HISTOIRE : Croissance ===== -->
 
-    <div class="histoire" id="modal-croissance">
+    <div class="histoire modal" id="modal-croissance">
         <div class="modal-content modal-history">
             <span class="close" data-close="modal-croissance">×</span>
 
@@ -932,7 +938,7 @@
 
     <!-- ===== MODALE HISTOIRE : Aujourd'hui ===== -->
 
-    <div class="histoire" id="modal-aujourdhui">
+    <div class="histoire modal" id="modal-aujourdhui">
         <div class="modal-content modal-history">
             <span class="close" data-close="modal-aujourdhui">×</span>
 
